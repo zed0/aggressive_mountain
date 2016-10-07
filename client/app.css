@@ -1,0 +1,9 @@
+body {
+	color:            #0a0a0a;
+	background-color: #fefefe;
+	font-family:      'Lato', Helvetica, Roboto, Arial, sans-serif;
+}
+
+.am-content {
+	margin: 10px;
+}

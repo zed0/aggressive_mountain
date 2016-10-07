@@ -1,0 +1,28 @@
+<div>
+	<p>
+		You have done {{$ctrl.countDone($ctrl.todoList)}}/{{$ctrl.todoList.length}} of your items!
+	</p>
+	<input
+		ng-model="$ctrl.newTodoName"
+		type="text"
+	>
+	</input>
+	<button
+		ng-click="$ctrl.createTodo()"
+	>
+		Add!
+	</button>
+
+	<ul>
+		<li
+			ng-repeat="todo in $ctrl.todoList"
+		>
+			<input
+				type="checkbox"
+				ng-model="todo.done"
+			>
+			</input>
+			{{todo.name}}
+		</li>
+	</ul>
+</div>

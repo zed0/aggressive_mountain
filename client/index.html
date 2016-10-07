@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="aggressiveMountain">
+	<head>
+		<meta charset="utf-8">
+		<title>Aggressive Mountain</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="app.css">
+
+		<link rel="stylesheet" href="components/header/header.css">
+		<link rel="stylesheet" href="components/footer/footer.css">
+		<!-- Add more css files here -->
+	</head>
+	<body>
+		<am-header
+			pages="[
+				{title: 'Front Page',      sref: 'frontPage'},
+				{title: 'Getting Started', sref: 'gettingStarted'},
+				{title: 'Todo List',       sref: 'todoList'},
+			]"
+		>
+		</am-header>
+
+		<!-- The current view appears here -->
+		<div
+			class="am-content"
+		>
+			<ui-view></ui-view>
+		</div>
+
+		<am-footer></am-footer>
+
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+		<script src="app.js"></script>
+
+		<script src="components/header/header.js"></script>
+		<script src="components/footer/footer.js"></script>
+		<!-- Add more component js files here -->
+
+		<script src="views/frontPage/frontPage.js"></script>
+		<script src="views/gettingStarted/gettingStarted.js"></script>
+		<script src="views/todoList/todoList.js"></script>
+		<!-- Add more view js files here -->
+	</body>
+</html>

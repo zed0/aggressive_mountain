@@ -1,0 +1,12 @@
+<ul class="am-header">
+	<li
+		ng-repeat="page in $ctrl.pages"
+	>
+		<a
+			ui-sref="{{page.sref}}"
+			ui-sref-active="am-active"
+		>
+			{{page.title}}
+		</a>
+	</li>
+</ul>
